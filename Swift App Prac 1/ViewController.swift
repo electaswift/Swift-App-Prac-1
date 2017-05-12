@@ -10,7 +10,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var theLabel: UILabel!
     
     
@@ -21,14 +21,22 @@ class ViewController: UIViewController {
     
     
     @IBAction func theButton(_ sender: Any) {
-        print(text1.text!)
-        print(text2.text!)
         
-       theLabel.text = "\(Double(text1.text!)! + Double(text2.text!)!)"
+        var addition = true
         
-      //another option  theLabel.text = String(Double(text1.text!)! + Double(text2.text!)!)
-        
+        if addition {
+            print(text1.text!)
+            print(text2.text!)
+            
+            theLabel.text = "\(Double(text1.text!)! + Double(text2.text!)!)"
+            
+        } else {
+            theLabel.text = "\(Double(text1.text!)! - Double(text2.text!)!)"
         }
-        
-        
     }
+    
+    //another option  theLabel.text = String(Double(text1.text!)! + Double(text2.text!)!)
+    
+}
+
+
