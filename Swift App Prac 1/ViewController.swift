@@ -23,6 +23,11 @@ class ViewController: UIViewController {
     @IBAction func theButton(_ sender: Any) {
         print(text1.text!)
         print(text2.text!)
+        
+       theLabel.text = "\(Double(text1.text!)! + Double(text2.text!)!)"
+        
+      //another option  theLabel.text = String(Double(text1.text!)! + Double(text2.text!)!)
+        
         }
         
         
